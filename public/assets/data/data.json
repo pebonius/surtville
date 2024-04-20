@@ -3,7 +3,8 @@
     "title": "surtville",
     "menuBackground": "menuBg",
     "menuMusic": "aNewTown",
-    "about": "this is all you"
+    "about": "this is all you",
+    "dialogueFont": "inGameFont"
   },
   "playerData": {
     "name": "player",
@@ -38,7 +39,7 @@
           "actions": [
             {
               "name": "playDialogue",
-              "arguments": [[{ "text": "i could go in but i wont" }]]
+              "arguments": [[{ "text": "I could go in but I shan't." }]]
             }
           ]
         }

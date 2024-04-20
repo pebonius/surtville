@@ -18,12 +18,13 @@ export default class Dialogue {
     );
     this.size = new Point(this.canvas.width * 0.93, this.canvas.height * 0.2);
     this.bgColor = "gray";
-    this.fontSize = this.canvas.width * 0.03;
+    this.fontSize = this.canvas.width * 0.05;
     this.textColor = "white";
     this.textPosition = new Point(
       this.position.x + this.canvas.width * 0.015,
       this.position.y + this.canvas.height * 0.015
     );
+    this.dialogueFont = gameScreen.content.data.meta.dialogueFont;
   }
   playDialogue(messages) {
     checkForArray(messages, "messages");
@@ -86,7 +87,8 @@ export default class Dialogue {
         this.fontSize,
         this.textColor,
         this.textPosition.x,
-        this.textPosition.y
+        this.textPosition.y,
+        this.dialogueFont
       );
     }
   }

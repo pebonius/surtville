@@ -2,14 +2,17 @@ game by peb:
 https://pebonius.itch.io/
 
 tileset:
-- "town tiles" by Surt https://opengameart.org/content/town-tiles
+- "Town tiles" by Surt https://opengameart.org/content/town-tiles
 
 music tracks:
-- "grasslands" by SubspaceAudio https://opengameart.org/content/jrpg-pack-1-exploration
-- "town theme" by cynicmusic https://opengameart.org/content/town-theme-rpg
-- "a new town" by cynicmusic https://opengameart.org/content/a-new-town-rpg-theme
-- "dark forest" theme by cynicmusic https://opengameart.org/content/dark-forest-theme
+- "Grasslands" by SubspaceAudio https://opengameart.org/content/jrpg-pack-1-exploration
+- "Town theme" by cynicmusic https://opengameart.org/content/town-theme-rpg
+- "A new town" by cynicmusic https://opengameart.org/content/a-new-town-rpg-theme
+- "Dark forest" theme by cynicmusic https://opengameart.org/content/dark-forest-theme
 
 images:
 - "wizard tower" by JAP https://opengameart.org/content/oil-painting-landscapes
-- "legend of faune" by ansimuz https://opengameart.org/content/legend-of-faune
+- "Legend of Faune" by ansimuz https://opengameart.org/content/legend-of-faune
+
+fonts:
+- "DungeonFont" by vrtxrry https://vrtxrry.itch.io/dungeonfont

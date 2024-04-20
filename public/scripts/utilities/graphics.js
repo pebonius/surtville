@@ -1,7 +1,15 @@
 export const defaultFont = "Courier New";
 
-export const drawText = (context, text, fontSize, color, posX, posY) => {
-  context.font = fontSize + "px " + defaultFont;
+export const drawText = (
+  context,
+  text,
+  fontSize,
+  color,
+  posX,
+  posY,
+  font = defaultFont
+) => {
+  context.font = fontSize + "px " + font;
   context.fillStyle = color;
   context.textAlign = "left";
   context.textBaseline = "top";
