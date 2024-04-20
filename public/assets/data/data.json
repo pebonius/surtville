@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "surtville",
+    "title": "Primordia Offline",
     "menuBackground": "menuBg",
     "menuMusic": "aNewTown",
     "about": "this is all you",
@@ -11,7 +11,7 @@
     "map": 0,
     "posX": 5,
     "posY": 9,
-    "sprite": "player"
+    "sprite": "goblin"
   },
   "variables": [{ "name": "test", "value": false }],
   "maps": [

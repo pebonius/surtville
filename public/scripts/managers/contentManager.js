@@ -64,12 +64,7 @@ export default class ContentManager {
   }
   loadSounds() {}
   loadMusic() {
-    const tracks = [
-      "grasslands",
-      "townTheme",
-      "aNewTown",
-      "darkForest",
-    ];
+    const tracks = ["grasslands", "townTheme", "aNewTown", "darkForest"];
 
     tracks.forEach((element) => {
       this.loadAudio((audio) => {
@@ -78,7 +73,7 @@ export default class ContentManager {
     });
   }
   loadImages() {
-    const images = ["menuBg", "town_tiles", "player"];
+    const images = ["menuBg", "town_tiles", "player", "dog", "frog", "goblin"];
 
     images.forEach((element) => {
       this.loadImage((image) => {
