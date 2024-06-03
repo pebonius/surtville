@@ -73,7 +73,7 @@ export default class ContentManager {
     });
   }
   loadImages() {
-    const images = ["menuBg", "town_tiles", "player", "dog", "frog", "goblin"];
+    const images = ["menuBg", "town_tiles", "dog", "frog", "goblin"];
 
     images.forEach((element) => {
       this.loadImage((image) => {

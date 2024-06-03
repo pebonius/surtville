@@ -3,7 +3,7 @@ import Point from "../geometry/point.js";
 import Label from "../ui/label.js";
 import GameScreen from "./gameScreen.js";
 import AboutScreen from "./aboutScreen.js";
-import { drawImage } from "../utilities/graphics.js";
+import { drawImage, drawText } from "../utilities/graphics.js";
 
 export default class WelcomeScreen extends GameState {
   constructor(gameStates, canvas, input, content, sound) {
@@ -18,6 +18,7 @@ export default class WelcomeScreen extends GameState {
       this.canvas.width / 4,
       (this.canvas.height / 7) * 5
     );
+    this.font = content.data.meta.dialogueFont;
     this.fontSize = this.canvas.width * 0.04;
     this.titleFontSize = this.canvas.width * 0.07;
     this.menuEntryPadding = this.canvas.width * 0.05;
@@ -101,6 +102,15 @@ export default class WelcomeScreen extends GameState {
     drawImage(context, this.bgImage, this.bgPos, this.bgSize);
     this.titleLabel.draw(context);
     this.drawControlLabels(context);
+    drawText(
+      context,
+      "this is just to load inGame font",
+      10,
+      "white",
+      -100,
+      -100,
+      this.font
+    );
   }
   drawControlLabels(context) {
     this.controlLabels.forEach((e) => e.draw(context));
