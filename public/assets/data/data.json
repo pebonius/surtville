@@ -3,7 +3,7 @@
     "title": "sandbox hehe :)))",
     "menuBackground": "menuBg",
     "menuMusic": "aNewTown",
-    "about": "this is all you",
+    "about": "testing stuff",
     "dialogueFont": "inGameFont"
   },
   "playerData": {
@@ -17,7 +17,7 @@
   "maps": [
     {
       "name": "0",
-      "walkableTiles": [10, 11, 9, 7, 8, 1],
+      "walkableTiles": [1, 7, 8, 9, 10, 11],
       "tiles": [
         [18, 18, 18, 18, 18, 18, 18, 18, 18, 18],
         [18, 11, 11, 20, 21, 14, 29, 11, 11, 18],
@@ -32,14 +32,64 @@
       ],
       "events": [
         {
-          "name": "test",
+          "name": "enterBuilding",
           "posX": 5,
           "posY": 5,
           "sprite": "",
           "actions": [
             {
+              "name": "movePlayer",
+              "arguments": [6, 9, 1]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "1",
+      "walkableTiles": [1, 7, 8, 9, 10, 11, 19],
+      "tiles": [
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 12, 12, 19, 0, 7, 12, 12, 12, 0],
+        [0, 12, 12, 7, 0, 7, 12, 12, 12, 0],
+        [0, 12, 12, 7, 0, 7, 7, 7, 19, 0],
+        [0, 7, 7, 7, 0, 0, 0, 7, 0, 0],
+        [0, 12, 12, 7, 7, 7, 7, 7, 7, 0],
+        [0, 12, 12, 7, 0, 7, 7, 7, 7, 0],
+        [0, 12, 12, 7, 0, 7, 7, 7, 7, 0],
+        [0, 19, 7, 7, 0, 7, 7, 7, 7, 0],
+        [0, 0, 0, 0, 0, 0, 7, 0, 0, 0]
+      ],
+      "events": [
+        {
+          "name": "exit",
+          "posX": 6,
+          "posY": 9,
+          "sprite": "",
+          "actions": [
+            {
+              "name": "movePlayer",
+              "arguments": [5, 5, 0]
+            }
+          ]
+        },
+        {
+          "name": "frog",
+          "posX": 6,
+          "posY": 6,
+          "sprite": "frog",
+          "actions": [
+            {
               "name": "playDialogue",
-              "arguments": [[{ "text": "I could go in but I shan't." }]]
+              "arguments": [
+                [
+                  { "text": "frog: this place is wet" },
+                  {
+                    "text": "frog: there's even like water on the floor and shit"
+                  },
+                  { "text": "frog: i like it here" }
+                ]
+              ]
             }
           ]
         }
